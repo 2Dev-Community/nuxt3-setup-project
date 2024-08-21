@@ -11,7 +11,7 @@ WORKDIR /src
 # Build
 FROM base as build
 
-COPY package.json yarn.lock .
+COPY package.json yarn.lock ./
 RUN yarn install --production=false
 
 COPY . .

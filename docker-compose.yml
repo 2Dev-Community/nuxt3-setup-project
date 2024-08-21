@@ -3,5 +3,6 @@ services:
   nuxt3-setup-project:
     build:
       context: .
+    container_name: nuxt3-setup-project
     ports:
       - '3000:3000'
